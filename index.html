@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Quillan Salkilld | Unofficial Fan Site</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Barlow:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script>try{var t=localStorage.getItem("theme");if(t)document.documentElement.dataset.theme=t;}catch(e){}</script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="#top">Salkilld Fan Site</a>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#fights">Fights</a>
+      <a href="#stats">Stats</a>
+      <a href="#videos">Videos</a>
+      <button class="theme-toggle" type="button" aria-label="Switch color theme">&#9680;</button>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <p class="hero-sub">Australian lightweight &middot; Pinjarra, Western Australia</p>
+      <h1>Quillan<br>Salkilld</h1>
+      <p class="hero-record"><strong><span data-count="13">13</span>&ndash;<span data-count="1">1</span></strong> overall &nbsp;|&nbsp; <strong><span data-count="6">6</span>&ndash;<span data-count="0">0</span></strong> in the UFC</p>
+      <a class="btn" href="#videos">Watch the fights</a>
+    </section>
+
+    <section id="about" class="section">
+      <h2>About Quillan</h2>
+      <div class="about-grid"><figure class="portrait">
+        <img src="image\images (1).jpg" alt="Quillan Salkilld at a UFC event" width="800" height="1000" loading="lazy">
+        <figcaption>Photo: Quillan Famous Celebration</figcaption>
+      </figure>
+
+        <div class="bio">
+          <p>Quillan Salkilld was born on 28 December 1999 in Pinjarra, Western Australia. He started training in March 2018, turned pro in 2021, and lost his pro debut. He has not lost since.</p>
+          <p>He earned his UFC contract with a unanimous decision win over Gauge Young on Dana White's Contender Series in September 2024. Since his UFC debut in February 2025 he has won all six of his fights, and five of them ended in the first round.</p>
+          <p>He trains at Luistro Combat Academy and fights at 155 pounds. In August 2026 he beat Mateusz Gamrot in his first UFC main event, and he has said he wants a top-five opponent next.</p>
+        </div>
+        <dl class="facts">
+          <div><dt>Full name</dt><dd>Quillan Zane Salkilld</dd></div>
+          <div><dt>Born</dt><dd>28 December 1999</dd></div>
+          <div><dt>Division</dt><dd>Lightweight (155 lb)</dd></div>
+          <div><dt>Height</dt><dd>6 ft 0 in (183 cm)</dd></div>
+          <div><dt>Reach</dt><dd>75 in</dd></div>
+          <div><dt>Team</dt><dd>Luistro Combat Academy</dd></div>
+          <div><dt>Pro since</dt><dd>2021</dd></div>
+          <div><dt>UFC debut</dt><dd>8 February 2025</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <section id="fights" class="section">
+      <h2>Fight history since the Contender Series</h2>
+      <div class="filters" role="group" aria-label="Filter fights by method">
+        <button class="filter active" data-filter="all">All</button>
+        <button class="filter" data-filter="ko">KO / TKO</button>
+        <button class="filter" data-filter="sub">Submission</button>
+        <button class="filter" data-filter="dec">Decision</button>
+      </div>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr><th>Result</th><th>Opponent</th><th>Method</th><th>Event</th><th>Date</th></tr>
+          </thead>
+          <tbody>
+            <tr data-method="sub"><td><span class="win">Win</span></td><td>Mateusz Gamrot</td><td>Submission (RNC), R1 4:25</td><td>UFC Fight Night, Las Vegas</td><td>8 Aug 2026</td></tr>
+            <tr data-method="ko"><td><span class="win">Win</span></td><td>Beneil Dariush</td><td>TKO (punches), R1</td><td>UFC Fight Night, Perth</td><td>2 May 2026</td></tr>
+            <tr data-method="sub"><td><span class="win">Win</span></td><td>Jamie Mullarkey</td><td>Submission (face crank), R1 3:02</td><td>UFC 325, Sydney</td><td>31 Jan 2026</td></tr>
+            <tr data-method="ko"><td><span class="win">Win</span></td><td>Nasrat Haqparast</td><td>KO, R1 2:30</td><td>UFC 321</td><td>25 Oct 2025</td></tr>
+            <tr data-method="dec"><td><span class="win">Win</span></td><td>Yanal Ashmouz</td><td>Unanimous decision</td><td>UFC 316, Newark</td><td>7 Jun 2025</td></tr>
+            <tr data-method="ko"><td><span class="win">Win</span></td><td>Anshul Jubli</td><td>TKO (punches), R1 0:19</td><td>UFC 312</td><td>8 Feb 2025</td></tr>
+            <tr data-method="dec"><td><span class="win">Win</span></td><td>Gauge Young</td><td>Unanimous decision</td><td>Contender Series S8</td><td>3 Sep 2024</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section id="stats" class="section">
+      <h2>UFC stats</h2>
+      <ul class="chips">
+        <li><strong>6&ndash;0</strong> UFC record</li>
+        <li><strong>5 of 6</strong> wins finished in round 1</li>
+        <li><strong>3</strong> KO / TKO wins</li>
+        <li><strong>2</strong> submissions</li>
+      </ul>
+      <h3 class="chart-title">How long each UFC fight lasted</h3>
+      <ol class="bars" id="chart" aria-label="Fight duration in minutes and seconds"></ol>
+      <p class="note">Bars show fight length out of a 15:00 three-round fight. Dariush time is from a stats tracker.</p>
+    </section>
+
+    <section id="videos" class="section">
+      <h2>Fight videos</h2>
+      <p class="note">Full UFC fights stream on Paramount+ and UFC Fight Pass. Highlights are on the official UFC YouTube channel. Each button below opens a YouTube search for that fight. To embed a video on this page, paste its YouTube ID into the <code>data-id</code> of a card and it will play here.</p>
+      <div class="videos">
+        <article class="video" data-id="">
+          <h3>Salkilld vs Gamrot</h3>
+          <p>First UFC main event, 2026</p>
+          <a class="btn" target="_blank" rel="noopener" href="https://www.youtube.com/results?search_query=Salkilld+vs+Gamrot+UFC+highlights">Watch highlights</a>
+        </article>
+        <article class="video" data-id="">
+          <h3>Salkilld vs Dariush</h3>
+          <p>Performance of the Night, 2026</p>
+          <a class="btn" target="_blank" rel="noopener" href="https://www.youtube.com/results?search_query=Salkilld+vs+Dariush+UFC+highlights">Watch highlights</a>
+        </article>
+        <article class="video" data-id="">
+          <h3>Salkilld vs Mullarkey</h3>
+          <p>UFC 325, Sydney</p>
+          <a class="btn" target="_blank" rel="noopener" href="https://www.youtube.com/results?search_query=Salkilld+vs+Mullarkey+UFC+325">Watch highlights</a>
+        </article>
+        <article class="video" data-id="">
+          <h3>Salkilld vs Haqparast</h3>
+          <p>UFC 321 knockout</p>
+          <a class="btn" target="_blank" rel="noopener" href="https://www.youtube.com/results?search_query=Salkilld+vs+Haqparast+UFC+321">Watch highlights</a>
+        </article>
+        <article class="video" data-id="">
+          <h3>Salkilld vs Ashmouz</h3>
+          <p>UFC 316, Newark</p>
+          <a class="btn" target="_blank" rel="noopener" href="https://www.youtube.com/results?search_query=Salkilld+vs+Ashmouz+UFC+316">Watch highlights</a>
+        </article>
+        <article class="video" data-id="">
+          <h3>Salkilld vs Jubli</h3>
+          <p>UFC debut, 19-second finish</p>
+          <a class="btn" target="_blank" rel="noopener" href="https://www.youtube.com/results?search_query=Salkilld+vs+Jubli+UFC+312">Watch highlights</a>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Unofficial fan site. Not affiliated with Quillan Salkilld, the UFC or any of its partners. Stats as of August 2026.</p>
+  </footer>
+
+  <dialog class="player" id="player">
+    <button class="player-close" type="button" aria-label="Close video">&times;</button>
+    <div class="player-frame"></div>
+  </dialog>
+  <button class="to-top" aria-label="Back to top" hidden>&uarr;</button>
+  <script src="script.js"></script>
+</body>
+</html>
