@@ -46,7 +46,7 @@ a { color: inherit; }
 .site-header nav a:hover { color: var(--gold); }
 .hero {
   padding: 10vh 5vw 12vh;
-  background: linear-gradient(rgba(10,26,31,.75), rgba(10,26,31,.9)), url("image/images.jpg") center top / cover
+  background: linear-gradient(rgba(10,26,31,.75), rgba(10,26,31,.9)), url("images.jpg") center top / cover
 }
 .hero-sub { color: var(--muted); margin-bottom: 1rem; }
 .hero h1 { font-size: clamp(4.5rem, 20vw, 14rem); color: var(--gold); letter-spacing: -0.01em; margin-bottom: 1.5rem; }
